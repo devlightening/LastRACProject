@@ -1,0 +1,18 @@
+﻿using Core.DataAccess.Repositories;
+using DataAccess.Abstracts.Dals;
+using DataAccess.Concretes.Contexts;
+using Entites.Concretes.Models;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccess.Concretes.EFDals
+{
+    public class EFFakeCreditCardDal : EntityRepository<FakeCreditCard , EfProjectContext>, IFakeCreditCardDal
+    {
+
+    }
+}
